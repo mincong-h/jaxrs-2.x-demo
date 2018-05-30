@@ -23,6 +23,7 @@ public class ShopApplication extends Application {
   @Override
   public Set<Object> getSingletons() {
     Set<Object> set = new HashSet<>();
+    set.add(new ShopExceptionMapper());
     set.add(newJacksonJsonProvider());
     return set;
   }
