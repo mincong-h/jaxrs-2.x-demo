@@ -16,6 +16,7 @@ public class ShopApplication extends Application {
   @Override
   public Set<Class<?>> getClasses() {
     Set<Class<?>> set = new HashSet<>();
+    set.add(PingResource.class);
     set.add(ProductResourceImpl.class);
     return set;
   }

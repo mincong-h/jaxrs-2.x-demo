@@ -10,12 +10,11 @@ import org.glassfish.jersey.server.ResourceConfig;
 public class Main {
 
   private static URI getBaseURI() {
-    return UriBuilder.fromUri("http://localhost/api/").port(8080).build();
+    return UriBuilder.fromUri("http://localhost/").port(8080).build();
   }
 
   static final URI BASE_URI = getBaseURI();
 
-  @SuppressWarnings("unchecked")
   static HttpServer startServer() {
     ResourceConfig rc = ResourceConfig.forApplication(new ShopApplication());
     rc.register(new MyRequestFilter());
