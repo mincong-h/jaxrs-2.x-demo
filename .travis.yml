@@ -1,4 +1,12 @@
+sudo: false
 language: java
 jdk: oraclejdk8
+
+before_install:
+  - mvn -v
+  - mvn -B -q clean install -DskipTests -f quickstart/pom.xml
+  - mvn -B -q clean install -DskipTests -f legacy/pom.xml
+
 script:
-- mvn clean verify -f legacy/pom.xml
+  - mvn clean verify -f quickstart/pom.xml
+  - mvn clean verify -f legacy/pom.xml
