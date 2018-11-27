@@ -6,6 +6,7 @@ Module | Description
 :----- | :-----
 `quickstart` | [A simple REST demo with JAX-RS][1]
 `http-methods` | [HTTP Methods in JAX-RS][2]
+`jaxrs-params` | JAX-RS Parameter Annotations
 
 [1]: https://mincong-h.github.io/2018/11/13/simple-rest-demo-with-jax-rs/
 [2]: https://mincong-h.github.io/2018/11/20/http-methods-in-jax-rs/
