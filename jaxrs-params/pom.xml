@@ -112,7 +112,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>io.mincong.bookshop.Main</mainClass>
+              <mainClass>io.mincong.demo.Main</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>

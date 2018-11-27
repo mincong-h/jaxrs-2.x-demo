@@ -1,4 +1,4 @@
-package io.mincong.bookshop;
+package io.mincong.demo;
 
 import java.util.Collections;
 import java.util.HashSet;
