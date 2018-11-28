@@ -20,7 +20,7 @@ import javax.ws.rs.core.Response;
  * @author Mincong Huang
  * @since 1.0
  */
-@Path("params")
+@Path("/")
 @Produces(MediaType.TEXT_PLAIN)
 public class ParamResource {
 
