@@ -67,6 +67,7 @@ public class ParamResource {
 
   @POST
   @Path("beanParam")
+  @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
   public Response postBeanParam(@BeanParam Image image) {
     String s = "height=" + image.getHeight();
     s += ", width=" + image.getWidth();
