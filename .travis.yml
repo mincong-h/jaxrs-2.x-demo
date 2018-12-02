@@ -8,9 +8,11 @@ before_install:
   - mvn -B -q clean install -DskipTests -f http-methods/pom.xml
   - mvn -B -q clean install -DskipTests -f jaxrs-params/pom.xml
   - mvn -B -q clean install -DskipTests -f legacy/pom.xml
+  - mvn -B -q clean install -DskipTests -f exception/pom.xml
 
 script:
   - mvn clean verify -f quickstart/pom.xml
   - mvn clean verify -f http-methods/pom.xml
   - mvn clean verify -f jaxrs-params/pom.xml
   - mvn clean verify -f legacy/pom.xml
+  - mvn clean verify -f exception/pom.xml
