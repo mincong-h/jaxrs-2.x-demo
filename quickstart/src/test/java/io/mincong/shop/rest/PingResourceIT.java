@@ -24,7 +24,7 @@ public class PingResourceIT {
   @Before
   public void setUp() {
     server = Main.startServer();
-    target = ClientBuilder.newBuilder().build().target(Main.BASE_URI.resolve("ping"));
+    target = ClientBuilder.newClient().target(Main.BASE_URI.resolve("ping"));
   }
 
   @After

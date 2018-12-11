@@ -26,7 +26,7 @@ public class ParamResourceIT {
   @Before
   public void setUp() {
     server = Main.startServer();
-    target = ClientBuilder.newBuilder().build().target(Main.BASE_URI);
+    target = ClientBuilder.newClient().target(Main.BASE_URI);
   }
 
   @After

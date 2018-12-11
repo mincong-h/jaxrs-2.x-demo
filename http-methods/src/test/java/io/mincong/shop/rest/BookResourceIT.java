@@ -34,7 +34,7 @@ public class BookResourceIT {
     BookResource.books.put(id.get(), new Book(id.get(), "Awesome"));
 
     server = Main.startServer();
-    target = ClientBuilder.newBuilder().build().target(Main.BASE_URI.resolve("books"));
+    target = ClientBuilder.newClient().target(Main.BASE_URI.resolve("books"));
   }
 
   @After
