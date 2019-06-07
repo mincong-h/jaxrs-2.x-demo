@@ -16,7 +16,7 @@
     <junit.version>4.12</junit.version>
     <assertj.version>3.9.1</assertj.version>
     <jaxrs.version>2.1</jaxrs.version>
-    <jackson.version>2.9.8</jackson.version>
+    <jackson.version>2.9.9</jackson.version>
 
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
