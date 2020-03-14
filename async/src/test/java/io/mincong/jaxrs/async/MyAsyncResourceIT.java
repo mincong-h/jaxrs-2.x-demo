@@ -64,4 +64,11 @@ public class MyAsyncResourceIT {
     assertEquals(Status.OK.getStatusCode(), r.getStatus());
     assertEquals("Welcome to async world, again!", r.readEntity(String.class));
   }
+
+  @Test
+  public void asyncResponse3() {
+    Response r = target.path("async/longRunning3/fun").queryParam("key", "value").request().get();
+    assertEquals(Status.OK.getStatusCode(), r.getStatus());
+    assertEquals("Async world (id=fun, key=value)!", r.readEntity(String.class));
+  }
 }
