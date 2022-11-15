@@ -17,7 +17,7 @@
     <assertj.version>3.9.1</assertj.version>
     <jaxrs.version>2.1</jaxrs.version>
     <jackson.version>2.9.9</jackson.version>
-    <jacksonDatabind.version>2.10.0.pr1</jacksonDatabind.version>
+    <jacksonDatabind.version>2.12.7.1</jacksonDatabind.version>
 
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
